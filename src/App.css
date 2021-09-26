@@ -110,7 +110,7 @@ section article{
 
 .descripcion .busqueda{
     width: 80%;
-    height: 35px;
+    height: 40px;
     display:flex;
     background-color: white;
     margin-bottom: 50px;
@@ -118,20 +118,23 @@ section article{
 
 .busqueda input{
     width: 85%;
-    height: 35px;
+    height: 40px;
     font-size: 17px;
     font-family: 'Kanit', sans-serif;
     padding-left: 10px;
     box-sizing: border-box;
     border: none;
+    outline: none;
 }
 
 .lupa{
     text-align: center;
-    width: 12%;
-    height: 34px;
-    padding-top:10px;
+    width: 40px;
+    height: 40px;
     background-color: var(--color-marron);
+    display: flex;
+    justify-content: center;
+    align-items:center;
     color: white;
     box-sizing:border-box;
 }
@@ -149,8 +152,7 @@ section article{
 
 /*ESTILOS IMAGEN*/
 .imagen{
-    width: 40%;
-    
+    width: 40%; 
 }
 
 .imagen img{
