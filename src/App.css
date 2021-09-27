@@ -69,6 +69,11 @@ nav ul li:hover{
 .iconos i{
     font-size: 17px;
     color: var(--color-marron);
+    cursor: pointer;
+}
+
+.iconos i:hover{
+    color: white;
 }
 
 /*ESTILOS SECTION*/
@@ -89,6 +94,8 @@ section h1{
 section article{
     display: flex;
     flex-direction:row;
+    justify-content:center;
+    align-items: center;
     height:80%;
 }
 
@@ -99,13 +106,15 @@ section article{
     padding-left: 40px;
     flex-direction:column;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .descripcion p{
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
     padding-top: 25px;
-    margin-bottom: 45px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .descripcion .busqueda{
@@ -113,6 +122,7 @@ section article{
     height: 40px;
     display:flex;
     background-color: white;
+    margin-top: 35px;
     margin-bottom: 50px;
 }
 
@@ -152,11 +162,11 @@ section article{
 
 /*ESTILOS IMAGEN*/
 .imagen{
-    width: 40%; 
+    width: 33%; 
 }
 
 .imagen img{
-    width: 84%;
+    width: 100%;
     height:auto;
 }
 
@@ -168,7 +178,7 @@ section article{
     justify-content: space-between;
     text-align: right;
     padding-bottom: 15px;
-    width: 25%;
+    width: 32%;
     color: white;
 }
 
