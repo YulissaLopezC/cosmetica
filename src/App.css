@@ -6,8 +6,9 @@
     --color-rosa: #F1D4C2;
     --color-marron: #453232;
     --color-crema:#FFEEE4;
+    --color-cafe-claro:#987C66;
 }
-body{
+.App{
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -17,6 +18,11 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+h1, h2, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 header{
@@ -76,31 +82,34 @@ nav ul li:hover{
     color: white;
 }
 
-/*ESTILOS SECTION*/
-section{
-    height: 80%;
+/*ESTILOS SECTION PRINCIPAL*/
+.sectionPrincipal{
+    height: 100vh;
     display: column;
     text-align: center;
     background-color: var(--color-rosa);
 }
 
-section h1{
-    font-size: 75px;
-    font-family: 'Kanit', sans-serif;
-    color: var(--color-marron);
-    margin: 0;
+.sectionPrincipal article{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    height:100%;
+    
 }
 
-section article{
+.contprincipal{
     display: flex;
     flex-direction:row;
     justify-content:center;
     align-items: center;
-    height:80%;
+    height:95%;
+    overflow: hidden;
 }
 
 .descripcion{
-    width: 30%;
+    width: 45%;
     display:flex;
     text-align: left;
     padding-left: 40px;
@@ -109,10 +118,19 @@ section article{
     justify-content: center;
 }
 
+.descripcion h3{
+    font-size: 85px;
+    font-family: 'Kanit', sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    line-height: 90px;
+    color: var(--color-cafe-claro);
+    font-weight: 100;
+}
+
 .descripcion p{
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
-    padding-top: 25px;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -149,10 +167,14 @@ section article{
     box-sizing:border-box;
 }
 
-.descripcion button{
-    width:150px;
+.botones{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.stybutton{
+    width:165px;
     height: 35px;
-    background-color: var(--color-marron);
     color:white;
     font-family: 'Kanit', sans-serif;
     text-transform: uppercase;
@@ -160,9 +182,20 @@ section article{
     cursor: pointer;
 }
 
+.white{
+    background-color: var(--color-crema);
+    color: var(--color-marron);
+}
+
+.brown{
+    background-color: var(--color-marron);
+    color: var(--color-crema);
+}
+
 /*ESTILOS IMAGEN*/
 .imagen{
-    width: 33%; 
+    width: 55%;
+    height: 100%;
 }
 
 .imagen img{
@@ -171,16 +204,93 @@ section article{
 }
 
 .detalles{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    width:10%;
+    height: 5%;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 40px;
+    text-align: right;
+    color: var(--color-marron);
+    
+}
+
+/*ESTILOS SUB-SECTION */
+.subsection{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    background-color: var(--color-crema);
+}
+
+.gene{
+    height:100%;
     display: flex;
     flex-direction: column;
-    height: 150px;
-    align-self: flex-end;
+    width: 50%;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
     justify-content: space-between;
-    text-align: right;
-    padding-bottom: 15px;
-    width: 32%;
-    color: white;
+    background-color: white;
+    padding-top: 15px;
 }
+
+.box{
+    -webkit-box-shadow: -8px 0px 17px -3px rgba(0,0,0,0.57); 
+    box-shadow: -8px 0px 17px -3px rgba(0,0,0,0.57);
+}
+
+.titulo-subsection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 30%;
+    box-sizing: border-box;
+}
+
+.titulo-subsection h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+    font-weight: lighter;
+    color: var(--color-marron);
+}
+
+.titulo-subsection p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.imagen-subsection{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imagen-subsection img{
+    width: 100%;
+    height: auto;
+}
+
+.texto-subsection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 25%;
+    box-sizing: border-box;
+}
+
+.texto-subsection p{
+    margin-bottom: 25px;
+}
+
 
 /*ESTILOS FOOTER*/
 footer{
@@ -215,3 +325,4 @@ footer h3{
     height:auto;    
 
 }
+
