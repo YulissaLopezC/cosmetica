@@ -1,4 +1,4 @@
-function Iconos(props){
+const Iconos = (props) =>{
     return(<i className={props.className}></i>);
 }
 

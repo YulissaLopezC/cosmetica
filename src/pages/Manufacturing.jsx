@@ -1,7 +1,7 @@
 import Cabecera from "components/Cabecera";
 import Footer from "components/Footer";
 
-function Manufacturing(){
+const Manufacturing = () =>{
     return (
     <div>
         <Cabecera/>

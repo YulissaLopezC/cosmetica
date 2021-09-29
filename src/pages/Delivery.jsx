@@ -1,7 +1,7 @@
 import Cabecera from 'components/Cabecera'
 import Footer from 'components/Footer'
 
-function Delivery(){
+const Delivery = ()=>{
     return(
         <div>
             <Cabecera/>

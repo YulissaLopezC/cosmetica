@@ -6,7 +6,7 @@ import buzzfeed from '../media/google.png'
 import walmart from '../media/walmart.png'
 /*---*/ 
 
-function Footer(){
+const Footer = () =>{
     return(
         <footer>
             <h3>some of our lenders</h3>

@@ -1,7 +1,7 @@
 import Cabecera from 'components/Cabecera'
 import Footer from 'components/Footer'
 
-function Figma(){
+const Figma = () =>{
     return(
         <div>
             <Cabecera/>

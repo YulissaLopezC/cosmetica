@@ -5,7 +5,7 @@ import munequita from 'media/ToyFaces_Tansparent_BG_47.png'
 import mujer from 'media/ToyFaces_Tansparent_BG_32.png'
 import hombre from 'media/ToyFaces_Tansparent_BG_37.png'
 
-function Index(){
+const Index = ()=>{
     return(
         <div>
             <Cabecera/> 
