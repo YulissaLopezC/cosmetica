@@ -1,14 +1,11 @@
-import Cabecera from "components/Cabecera"
 import Iconos from 'components/Iconos'
-import Footer from 'components/Footer'
 import munequita from 'media/ToyFaces_Tansparent_BG_47.png'
 import mujer from 'media/ToyFaces_Tansparent_BG_32.png'
 import hombre from 'media/ToyFaces_Tansparent_BG_37.png'
 
-const Index = ()=>{
+function Index(){
     return(
         <div>
-            <Cabecera/> 
             <section className="sectionPrincipal">
                 <article>
                     <div className="contprincipal">   
@@ -59,7 +56,6 @@ const Index = ()=>{
                     </div>
                 </div>
             </section>
-            <Footer/>
         </div>
     )
 }
